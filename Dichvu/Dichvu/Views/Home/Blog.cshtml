@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/style/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="~/style/js/vendor/bootstrap.min.js"></script>
+<script src="~/js/jquery-3.6.0.js"></script>
+
+<style>
+    .btn.btn-primary {
+        background: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+
+        .btn.btn-primary:hover {
+            background: #000;
+            border-color: #000;
+            color: #fff;
+        }
+
+        .btn.btn-primary.btn-black--hover:hover {
+            background: #666666;
+            color: #fff;
+        }
+
+    .filters .btn.active {
+        background: #007bff !important;
+        color: #fff;
+        border-color: #007bff !important;
+    }
+
+    .filters .btn {
+        border-color: transparent;
+        font-size: .8rem;
+        padding: 8px 20px;
+        margin: 5px;
+        background: rgba(52, 58, 64, 0.05);
+        color: #343a40;
+    }
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        background: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+</style>
+@*<script src="~/js/ProductCategory.js"></script>*@
+<script src="~/js/LoadProduct.js"></script>
+<section class="banner-area relative" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Job Details
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="single.html"> Job Details</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+<!-- Start blog-posts Area -->
+<section class="blog-posts-area section-gap">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-12 text-center" data-aos="fade">
+                <h2 class="section-title mb-3">Tổng hợp một số mẹo hay về Marketing</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+            <div id="filters" class="filters text-center button-group col-md-7">
+                <button onclick="fbcontent()" class="btn btn-primary active" data-filter="*">Facebook</button>
+                <button onclick="inscontent()" class="btn btn-primary" data-filter=".web">Shopee</button>
+                <button class="btn btn-primary" data-filter=".design">TikTok</button>
+                <button class="btn btn-primary" data-filter=".brand">Instagram</button>
+            </div>
+        </div>
+        <div class="row" id="loadcontent">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-post-thumb">
+                    <div class="img">
+                        <img src="~/assets/img/blog-item-01.png" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="#">Vivamus ac vehicula dui</a>
+                        </h3>
+                        <div class="text">
+                            Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
+                        </div>
+                        <a href="#" class="main-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="inscontent">
+            <div class="col-lg-4 col-md-6 col-sm-12" >
+                <div class="blog-post-thumb">
+                    <div class="img">
+                        <img src="~/assets/img/blog-item-02.png" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3>
+                            <a href="#">Phasellus convallis augue</a>
+                        </h3>
+                        <div class="text">
+                            Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
+                        </div>
+                        <a href="#" class="main-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End blog-posts Area -->
+<!-- Start callto-action Area -->
+<section class="callto-action-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content col-lg-9">
+                <div class="title text-center">
+                    <h1 class="mb-10 text-white">Join us today without any hesitation</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <a class="primary-btn" href="#">I am a Candidate</a>
+                    <a class="primary-btn" href="#">We are an Employer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End calto-action Area -->

@@ -1,0 +1,261 @@
+{
+    .accordion
+
+{
+    padding-bottom: 100px
+}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .accordion {
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width: 575px) {
+    .accordion {
+        padding-bottom: 30px
+    }
+}
+
+.accordion .accordion-wrapper {
+    background: #fff;
+    padding: 22px 40px 45px 20px
+}
+
+@media (max-width: 575px) {
+    .accordion .accordion-wrapper {
+        padding: 22px 29px 45px 20px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .accordion .accordion-wrapper {
+        padding: 22px 35px 45px 20px
+    }
+}
+
+.accordion .accordion-wrapper .card-header {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    border: 0
+}
+
+    .accordion .accordion-wrapper .card-header a {
+        padding: 25px 30px 25px 0px;
+        color: #222222;
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        text-decoration: none;
+        border: 0;
+        line-height: 1.5
+    }
+
+.accordion .accordion-wrapper .card {
+    margin-bottom: 0px;
+    border-radius: 0;
+    background: none;
+    border: 0
+}
+
+    .accordion .accordion-wrapper .card:last-child {
+        margin-bottom: 0px
+    }
+
+.accordion .accordion-wrapper .card-body {
+    background: none;
+    padding-bottom: 0px;
+    color: #7f8192;
+    padding: 25px 255px 25px 0;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .accordion .accordion-wrapper .card-body {
+        padding: 25px 0px 25px 0
+    }
+}
+
+@media (max-width: 575px) {
+    .accordion .accordion-wrapper .card-body {
+        padding: 25px 0px 25px 0
+    }
+}
+
+.accordion .accordion-wrapper .card-header h2 a::after {
+    position: absolute;
+    top: 31px;
+    font-size: 15px;
+    color: #222222;
+    right: 29px;
+    content: "\e64b";
+    font-family: 'themify';
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    transform: rotate(180deg)
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .accordion .accordion-wrapper .card-header h2 a::after {
+        right: -12px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .accordion .accordion-wrapper .card-header h2 a::after {
+        right: -7px
+    }
+}
+
+@media (max-width: 575px) {
+    .accordion .accordion-wrapper .card-header h2 a::after {
+        right: -7px
+    }
+}
+
+.accordion .accordion-wrapper .card-header h2 a.collapsed::after {
+    content: "\e64b";
+    transform: rotate(0deg)
+}
+
+.accordion .accordion-wrapper .card-header a.btn-link {
+    border-bottom: 2px solid #eae7f4
+}
+
+.accordion .accordion-wrapper .card-header a.collapsed {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.accordion .accordion-wrapper .card-header a span {
+    color: #331391;
+    font-size: 16px;
+    font-weight: 800
+}
+
+.accordion .nav-tabs {
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    position: relative;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background: #f5f3f9
+}
+
+    .accordion .nav-tabs .nav-link {
+        position: relative;
+        background: transparent;
+        padding: 33px 88px;
+        border-radius: 0;
+        border: 0;
+        color: #212025
+    }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .accordion .nav-tabs .nav-link {
+        padding: 33px 60px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .accordion .nav-tabs .nav-link {
+        padding: 15px 39px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .accordion .nav-tabs .nav-link {
+        padding: 33px 76px
+    }
+}
+
+@media (max-width: 575px) {
+    .accordion .nav-tabs .nav-link {
+        padding: 8px 21px;
+        margin-bottom: 20px
+    }
+}
+
+.accordion .nav-tabs .nav-link::after {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #331391;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -8px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden
+}
+
+.accordion .nav-tabs .nav-item {
+    display: block;
+    color: #331391;
+    font-size: 24px;
+    font-weight: 700
+}
+
+@media (max-width: 575px) {
+    .accordion .nav-tabs .nav-item {
+        font-size: 18px
+    }
+}
+
+.accordion .nav-tabs .nav-item.show .nav-link{
+    background: #331391;
+    color: #fff;
+    -webkit-transition: all 0s ease-out 0s;
+    -moz-transition: all 0s ease-out 0s;
+    -ms-transition: all 0s ease-out 0s;
+    -o-transition: all 0s ease-out 0s;
+    transition: all 0s ease-out 0s
+}
+
+    .accordion .nav-tabs .nav-item.show .nav-link:after, .accordion .nav-tabs .nav-link.active:after {
+        opacity: 1;
+        visibility: visible
+    }
+
+.accordion .nav-tabs .nav-link:focus, .accordion .nav-tabs .nav-link:hover {
+    border: 0
+}
+.accordion .nav-tabs .nav-link.active {
+    background: #331391;
+    color: #fff;
+    -webkit-transition: all 0s ease-out 0s;
+    -moz-transition: all 0s ease-out 0s;
+    -ms-transition: all 0s ease-out 0s;
+    -o-transition: all 0s ease-out 0s;
+    transition: all 0s ease-out 0s;
+}
+.accordion .nav-tabs .nav-link {
+    position: relative;
+    background: transparent;
+    padding: 33px 88px;
+    border-radius: 0;
+    border: 0;
+    color: #212025;
+}
+.accordion .nav-tabs .nav-item {
+    display: block;
+    color: #331391;
+    font-size: 24px;
+    font-weight: 700;
+}
